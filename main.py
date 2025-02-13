@@ -1,9 +1,14 @@
+# School Management System
+
+
+# Dictionaries for storing students data
 class_number = {}
 class_letter = {}
 class_room = {}
 class_all = {}
 
 
+# Logic for adding a new class
 def add_class():
     add_number = input('\nType in number of the class: ')
     add_letter = input('Type in a letter of the class: ').upper()
@@ -27,6 +32,7 @@ def add_class():
         print('\nError invalid symbol')
 
 
+# Logic for deleting class
 def delete_class():
 
     if len(class_all) == 0:
@@ -54,6 +60,7 @@ def delete_class():
             print('\nError invalid symbol!')
 
 
+# Logic for showing all classes
 def show_class():
     if len(class_all) == 0:
         print('\nNo records!')
@@ -69,6 +76,7 @@ def show_class():
         print(f'Total number of classes: "{count}"\n')
 
 
+# Logic for editing class details
 def edit_class():
     show_class()
     if len(class_all) == 0:
@@ -110,6 +118,7 @@ def edit_class():
                 print('\nError invalid symbol!')
 
 
+# Loop for calling logic functions until user decides to stop using it
 while True:
     user = input('\nWelcome to the School Management System!\n'
                  '\nType in:\n'
@@ -120,13 +129,25 @@ while True:
                  '"Exit" to leave\n'
                  '::: ').lower()
     if user == 'add':
+
+        # Calling the add function to add a new class
         add_class()
+
     elif user == 'delete':
+
+        # Calling the delete function to delete the class
         delete_class()
+
     elif user == 'edit':
+
+        # Calling the edit function to edit the class details
         edit_class()
+
     elif user == 'show':
+
+        # Calling the show function to show the class details
         show_class()
+
     elif user == 'exit':
         print('\nExit')
         exit(0)
