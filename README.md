@@ -42,7 +42,7 @@ The system provides the following options for class management:
 - **Show**: Display all current classes and their room assignments.
 - **Exit**: Exit the program.
 
-## Example Usage
+## Example Usage Scenario
 ```
 **************************************************
 Welcome to the School Management System!
