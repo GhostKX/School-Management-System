@@ -149,6 +149,9 @@ while True:
         show_class()
 
     elif user == 'exit':
+
+        # Exiting the program
         print('\nExit')
         exit(0)
+
 
